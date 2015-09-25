@@ -18,7 +18,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Name"
+            android:hint="@string/name"
             android:id="@+id/field_name"
             android:inputType="textCapWords"
             android:layout_marginBottom="16dp"
@@ -26,11 +26,9 @@
 
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:text="TOPPINGS"
-            android:textAllCaps="true"/>
+            android:text="@string/topping_header"
+            style="@style/HeaderTextStyle"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -40,7 +38,7 @@
         <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Whipped Cream"
+            android:text="@string/whipped_cream"
             android:paddingLeft="24dp"
             android:textSize="16sp"
             android:layout_marginBottom="16dp"
@@ -56,7 +54,7 @@
         <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Chocolate"
+            android:text="@string/chocolate"
             android:paddingLeft="24dp"
             android:textSize="16sp"
             android:layout_marginBottom="25dp"
@@ -68,7 +66,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="25dp"
-            android:text="QUANTITY"
+            android:text="@string/quantity"
             android:textAllCaps="true"/>
     <LinearLayout
         android:layout_width="match_parent"
@@ -87,7 +85,7 @@
             android:paddingLeft="8dp"
             android:paddingRight="8dp"
             android:textSize="16sp"
-            android:text="1"
+            android:text="@string/initial_quantity_value"
             android:textColor="@android:color/black"
             android:layout_gravity="center_vertical" />
 
@@ -98,12 +96,10 @@
             android:onClick="decrement" />
     </LinearLayout>
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_marginBottom="25dp"
-            android:text="ORDER SUMMARY"
-            android:textAllCaps="true"
-            android:layout_marginTop="25dp"/>
+            android:text="@string/order_summary"
+            android:layout_marginTop="25dp"
+            style="@style/HeaderTextStyle"/>
 
         <TextView
             android:id="@+id/order_summary_text_view"
@@ -117,7 +113,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
-            android:text="ORDER"
+            android:text="@string/order"
             android:onClick="submitOrder" />
 
         <TextView
@@ -131,9 +127,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
-            android:text="Send Email"
+            android:text="@string/send_email"
             android:onClick="sendEmail"/>
 
 
     </LinearLayout>
 </ScrollView>
+
